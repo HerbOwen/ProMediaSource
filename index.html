@@ -6,12 +6,13 @@
     <title>ProMedia</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
 </head>
     <body>      
         <div class="flex flex-col items-center">
             <div class="w-full">
                 <div class="max-w-1278 p-nav">
-                    <div class="flex space-between w-full">
+                    <div class="hero_box w-full">
                         <div class="flex items-center">
                             <img src="assets/pronetworkmedia.png" class="logo_pic" alt="">
                         </div>
@@ -26,27 +27,33 @@
                     </div>
                 </div>
             </div>
-            <section class="w-full hero flex items-center">
-                <div class="background-overlay"></div>    
-                <div class="max-w-1076 z-index-top p-1re">
-                    <div>
-                        <h1>EMBRACE AGILITY<br> EMBRACE INNOVATION</h1>    
-                    </div>
-                    <div>
-                        <h2>Agile Consulting | IT Consulting | Business Services</h2>
-                    </div>    
-                    <div class="mx-500">
-                        <p class="hero__p">ProNetworkMedia Specializes in Agile Consulting, IT Consulting and Business Services
-                        With over 20 years of experience providing IT Services to Wall Street, Media, Legal, Insurance, Hedge Funds, and Credit Card businesses.</p>
-                        <button type="button" class="hover_trans">START TODAY</button>
-                    </div>
-                </div>   
+            <section class="w-full hero flex">
+                <div class="background-overlay"></div>  
+                <!-- <div class="flex w-full items-center justify-center z-index-top p-1re">
+                        
+                        <div class="hero_square" >
+
+                        </div>    
+                        <div class="hero_text_ml">
+                            <div>
+                                <h1 class="hero_hone">EMBRACE AGILITY</h1>
+                                <h1 class="hero_hone hero_honemt">EMBRACE INNOVATION</h1>    
+                            </div>
+                            <div>
+                                <h2 class="hero_tagline hide_small">Agile Consulting | IT Consulting | Business Services</h2>
+                               
+                            </div>    
+                            <div>
+                                <p class="hero__p">ProNetworkMedia Specializes in Agile Consulting, IT Consulting and Business Services
+                                With over 20 years of experience providing IT Services to Wall Street, Media, Legal, Insurance, Hedge Funds, and Credit Card businesses.</p>
+                                <button type="button" class="hover_trans">START TODAY</button>
+                            </div>
+                        </div>
+                    
+                </div>    -->
             </section>
             <section class="w-full">
                 <div class="max-w-1278 p-standard section_margin">
-                    <!-- <div class="p-standard text-black w-full flex justify-center">
-                        <p class="header_text">Agile Consulting</p>
-                    </div> -->
                     <div class="grid gri-3x">
                         <div class="grid gri-1 text-black p-standard">
                             <div class="flex flex-col justify-center p-standard" >
@@ -57,7 +64,7 @@
                                     <p class="agile_p">Agile organizations experience more engaged teams who are better able to iteratively deliver innovative solutions and products and have happier customers.</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col justify-center p-standard" style="border-top: 1px solid #005D96;">
+                            <div class="flex flex-col justify-center p-standard bord-t-green">
                                 <div>
                                     <p class="agile_header2">Coaching & Support</p>
                                 </div>
@@ -66,9 +73,8 @@
                                     We'll ensure all the Agile ceremonies are optimized and teams are engaged.
                                     </p>
                                 </div>
-                                    
                             </div>
-                            <div class=" flex flex-col justify-center p-standard" style="border-top: 1px solid #005D96;">
+                            <div class=" flex flex-col justify-center p-standard p-standard-mob-mb bord-t-green">
                                 <div>
                                     <p class="agile_header2">Scaling Agile</p>
                                 </div>
@@ -78,9 +84,9 @@
                             </div>
                         </div>
                         <div>
-                            <div class="flex w-full p-standard text-black gap-1">
-                                <div class="w-half p-standard b_agile">
-                                    <div class="p-standard" style="margin:.1rem;">
+                            <div class="agile_flex w-full p-standard text-black gap-1">
+                                <div class="agile-width p-standard b_agile">
+                                    <div class="p-standard mt-pt1" >
                                         <div class="agile_photo_1">
                                         </div>
                                         <div class="agile_header">
@@ -91,8 +97,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-half p-standard b_agile">
-                                    <div class="p-standard" style="margin:.1rem;">
+                                <div class="agile-width p-standard b_agile">
+                                    <div class="p-standard mt-pt1">
                                         <div class="agile_photo_3">
                                         </div>
                                         <div class="agile_header">
@@ -105,9 +111,9 @@
                                   
                                 </div>
                             </div>   
-                            <div class="p-standard text-black flex gap-1">
-                                <div class="w-half p-standard b_agile">
-                                    <div class="p-standard" style="margin:.1rem;">
+                            <div class="agile_flex p-standard text-black gap-1">
+                                <div class="agile_width p-standard b_agile">
+                                    <div class="p-standard mt-pt1">
                                         <div class="agile_photo_2">
                                         </div>
                                         <div class="agile_header">
@@ -118,8 +124,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-half p-standard b_agile">
-                                    <div class="p-standard" style="margin:.1rem;">
+                                <div class="agile_width p-standard b_agile">
+                                    <div class="p-standard mt-pt1">
                                         <div class="agile_photo_4">
                                         </div>
                                         <div class="agile_header">
@@ -130,7 +136,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>  
                         </div>   
                     </div> 
@@ -138,17 +143,16 @@
             </section>
             <section class="w-full green-bg" >
                 <div class="max-w-1278 p-standard section_margin">
-                    <div>
-                        <!-- change these tags  and other things-->
+                    <div class="staff_photo_div edgePadding">
                         <p class="staff_header">Staffing and Resource Augmentation</h1>
-                        <h2 style="margin-top: -3px; ">You Need to Staff Up Quickly and Meet Critical Deliverables</h2>
-                        <p class="hero__p__staff mx-500 fw-bold">
+                        <p class="staffing_h2">You Need to Staff Up Quickly and Meet Critical Deliverables</p>
+                        <p class="hero__p__staff mx-5002 fw-bold">
                             Our Database of skilled and experienced professionals are ready to help your organization meet its objectives. 
                             Contact us with your latest open Reqs!
                         </p>
                     </div>
                     <div class="grid grid-staff">
-                        <div class="flex flex-col">
+                        <div class="flex flex-col staff_photo_div edgePaddingL">
                             <div class="staff_photo_1">
                             
                             </div>
@@ -156,19 +160,19 @@
                                 <p class="staff_tagline">Tech Professionals</p> 
                             </div>
                         </div>
-                        <div class="flex flex-col">
+                        <div class="flex flex-col staff_photo_div">
                             <div class="staff_photo_2" >
                             
                             </div>
-                            <div class="p-standard staff_text_cont f-bold">
+                            <div class="p-standard staff_text_cont3 f-bold">
                                 <p class="staff_tagline">Business Professionals</p> 
                             </div>
                         </div>
-                        <div class="flex flex-col">
+                        <div class="flex flex-col staff_photo_div edgePaddingR">
                             <div class="staff_photo_3">
                             
                             </div>
-                            <div class="p-standard staff_text_cont f-bold">
+                            <div class="p-standard staff_text_cont4 f-bold">
                                 <p class="staff_tagline">Executive Recruiting</p> 
                             </div>
                         </div>
@@ -176,8 +180,8 @@
                 </div> 
             </section>
             <section class="w-full text-black section_margin">
-                <div class="max-w-1278 p-standard">
-                    <div class="w-100 container bg_white p-standard2 b-rad">
+                <div class="max-w-1278">
+                    <div class="w-100 container p-standard b-rad edgePaddingL2">
                         <div class="cyber_photo_1 flex justify-center items-center">
                             <div class="cyber_inner_grid">
                         
@@ -199,7 +203,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-100 container p-standard2 bg_white b-rad" style="margin-top:2rem;">
+                    <div class="w-100 container p-standard b-rad edgePaddingL2 mt-2rs">
                         <div class="cyber_photo_2 flex justify-center items-center">
                             <div class="cyber_inner_grid">
                         
@@ -220,97 +224,87 @@
                     </div>
                 </div>
             </section>
-            <section class="w-full blue-bg " >
+            <section class="w-full blue-bg">
                 <div class="max-w-1278 p-standard section_margin">
                     <div class="grid-specializations p-standard b-rad">
-                        <div class="flex justify-center  p-standard2 " style="color:white;" >
+                        <div class="flex justify-center p-standard2 col_white">
                             <div>
-                            <p class="cyber_header" style="color: white;">
-                                ProNetworkMedia Specializes in the Following Areas
-                            </p> 
-                            <p class="agile_p" style="margin-top:1rem;">- Website and Responsive Development</p>
-                            <p class="agile_p pt-2">- Mobile development</p>
-                            <p class="agile_p pt-2">- Data Warehouse, ETL, Power BI, Business Intelligence</p>
-                            <p class="agile_p pt-2">- Cloud Enablement, Migration and Rollout</p>
-                            <p class="agile_p pt-2">- Microsoft Azure Cloud</p>
-                            <p class="agile_p pt-2">- Voice Enablement using Teams</p>
-                            <p class="agile_p pt-2">- API Development</p>
-                            <p class="agile_p pt-2">- Web Content Development</p>
-                            <p class="agile_p pt-2">- Virtual Reality and Augmented Reality</p>
-                            <p class="agile_p pt-2">- Artificial Intelligence</p>
-                            <p class="agile_p pt-2">- Web3, Blockchain, Bitcoin and Cryptocurrency</p>
-                            <p class="agile_p pt-2">- User Experience (UX)</p>
-                            <p class="agile_p pt-2">- Data Governance</p>
-                            <p class="agile_p pt-2">- CyberSecurity, Identity and Access Management, Threat Assessment</p>
+                                <p class="cyber_header col_white" >
+                                    ProNetworkMedia Specilizations 
+                                </p> 
+                                <p class="agile_p mt-1rs">- Website and Responsive Development</p>
+                                <p class="agile_p pt-2">- Mobile development</p>
+                                <p class="agile_p pt-2">- Data Warehouse, ETL, Power BI, Business Intelligence</p>
+                                <p class="agile_p pt-2">- Cloud Enablement, Migration and Rollout</p>
+                                <p class="agile_p pt-2">- Microsoft Azure Cloud</p>
+                                <p class="agile_p pt-2">- Voice Enablement using Teams</p>
+                                <p class="agile_p pt-2">- API Development</p>
+                                <p class="agile_p pt-2">- Web Content Development</p>
+                                <p class="agile_p pt-2">- Virtual Reality and Augmented Reality</p>
+                                <p class="agile_p pt-2">- Artificial Intelligence</p>
+                                <p class="agile_p pt-2">- Web3, Blockchain, Bitcoin and Cryptocurrency</p>
+                                <p class="agile_p pt-2">- User Experience (UX)</p>
+                                <p class="agile_p pt-2">- Data Governance</p>
+                                <p class="agile_p pt-2">- CyberSecurity, Identity and Access Management, Threat Assessment</p>
                             </div> 
                         </div>
                         <div class="special_photo_1 flex justify-center items-center">
                             <div class="cyber_inner_grid">
                         
-                            
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             <section class="w-full">
-                <div class="max-w-1278 p-standard section_margin">
-                    <div>
-                        <!-- change these tags  and other things-->
-                        <p class="staff_header text-black">Business Consulting Services</h1>
-                        <h2 class="text-black" style="margin-top: -3px;">We can help get you to where you are going</h2>
-                    </div>
-                    <div class="grid grid-staff">
-                        <div class="flex flex-col">
-                            <div class="consult_photo_1">
+                <div class="section_margin p-standard">
+
+                <div class="max-w-1278 flex flex-col text-black p-standard mt-2rs">
+                    
+                    <div class="flex_consult justify-center container">    
+                        <div class="consult_w33 flex justify-center">
+                            <div class="slideshow_biz" id="slideshow_pic">
+                                
+                            </div>
                             
-                            </div>
-                            <div class="p-standard staff_text_cont2">
-                                <p class="staff_tagline f-bold">Operations Management</p> 
-                                <p class="agile_p pt-2">- Business Process Improvement</p>
-                                <p class="agile_p pt-2">- Online Digital Payments</p>
-                                <p class="agile_p pt-2">- Re-Insurance</p>
-                                <p class="agile_p pt-2">- Model Analysis and Development</p>
-                                <p class="agile_p pt-2">- Insurance Exposure and Data Loss Reporting</p>
-                            </div>
                         </div>
-                        <div class="flex flex-col bg_white">
-                            <div class="consult_photo_2" >
-                            
-                            </div>
-                            <div class="p-standard staff_text_cont2 flex flex-col ">
-                                <p class="staff_tagline f-bold">Financial</p> 
-                                <p class="agile_p pt-2">- Improve Production efficiency</p>
-                                <p class="agile_p pt-2">- Manage Quality Controls</p>
-                                <p class="agile_p pt-2">- Compliance, Risk, and Legal Support</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col bg_white">
-                            <div class="consult_photo_3">
-                            
-                            </div>
-                            <div class="p-standard staff_text_cont2 flex flex-col ">
-                                <p class="staff_tagline f-bold">Business Operations</p> 
-                                <p class="agile_p pt-2">- Business Process Improvement</p>
-                                <p class="agile_p pt-2">- Online Digital Payments</p>
-                                <p class="agile_p pt-2">- Re-Insurance</p>
-                                <p class="agile_p pt-2">- Model Analysis and Development</p>
-                                <p class="agile_p pt-2">- Insurance Exposure and Data Loss Reporting</p>
+                        <div class="consult_whalf" id="slide_textarea">
+                            <p class="bizArea_header2">Business Consulting Services</p>
+                            <p class="staffing_h2_bizArea">We Help You get to Where You Are Going</p>
+                            <p id="slide_textHead" class="staff_tagline f-bold"></p>
+                            <div id="slide_textContent">
+
                             </div>
                         </div>
                     </div>
+                   
                 </div> 
-            </section>
+                    <div class="flex justify-center items-center mt-1rs" >
+                        <div>
+                        <div id="prevBtn"><i class="fa-solid fa-angle-left fa-lg"></i></div>    
+                        </div>
+                        <div>   
+                        <div id="dotContainer" class="flex"></div>
+                        </div>
+                        <div>
+                        <div id="nextBtn"><i class="fa-solid fa-angle-right fa-lg"></i></div>
+                        </div>
+                    </div>
+                </div>
+             
+            </section>        
         </div>
+
         <footer class="w-full">
-            <div class="max-w-1278 p-standard2 footer__gri">
+            <div class="max-w-1278 p-standard2 footer__gri" style="padding-top: 2rem; padding-bottom:2rem;" >
                 <div class="flex flex-col">
                     <h6 class="font-22">About</h6>
                     <p class="font-15 mb_foot_text">ProNetworkMedia LLC was established in 2008 and specializes in Agile Consulting, IT Consulting and Business Services.</p>
                     <p class="font-15">We have over 20 years of experience providing IT Services to Wall Street, Media, Legal, Insurance, Hedge Funds, Credit Card businesses.</p>
                 </div>
                 <div class="flex flex-col ">
-                    <h6 class="font-22">
+                    <h6 class="font-22 foot_contact">
                         Contacts
                     </h6>
                     <div class="flex items-center mb_foot_text">
