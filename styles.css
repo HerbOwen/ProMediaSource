@@ -258,8 +258,6 @@ button {
         padding-left: 1.5rem; 
         padding-right: 1.5rem; 
     }
-
-   
 }
 
 @media screen and (min-width:576px) {
@@ -363,42 +361,24 @@ button {
 .agile_photo_1 {
     height: 225px; 
     background: url(assets/agile_1.png); 
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 10px; 
-    border-radius: 5px; 
-    box-shadow: 1px 1px 15px 1px #343434;
 }
 
 .agile_photo_2 {
     height: 225px; 
     background: url(assets/agile_2.png); 
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 10px; 
-    border-radius: 5px; 
-    box-shadow: 1px 1px 15px 1px #343434;
 }
 
 .agile_photo_3 {
     height: 225px; 
     background: url(assets/agile_3.png); 
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 10px; 
-    border-radius: 5px;
-    box-shadow: 1px 1px 15px 1px #343434; 
 }
 
 .agile_photo_4 {
     height: 225px; 
     background: url(assets/agile_4.png); 
+}
+
+.agile_photo_1, .agile_photo_2, .agile_photo_3, .agile_photo_4 {
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -482,8 +462,6 @@ button {
         margin-left: 20%; 
         margin-right: 20%; 
     }
-
-    
 }
 
 @media screen and (min-width:1024px)  {
@@ -543,51 +521,29 @@ button {
 .staff_photo_2 {
     height: 250px; 
     background: url(assets/agile_4.png); 
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px 5px 0px 0px; 
-    box-shadow: 2px 2px 15px 2px #343434;
 }
-
 
 .staff_photo_3 {
     height: 250px; 
     background: url(assets/staff_3.png); 
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px 5px 0px 0px; 
-    box-shadow: 2px 2px 15px 2px #343434;
 }
 
 .consult_photo_1 {
     height: 250px; 
     background: url(assets/consulting_1.png); 
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px 5px 0px 0px; 
-    box-shadow: 2px 2px 15px 2px #343434;
 }
 
 .consult_photo_2 {
     height: 250px; 
     background: url(assets/consulting_2.png); 
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px 5px 0px 0px; 
-    box-shadow: 2px 2px 15px 2px #343434;
 }
 
 .consult_photo_3 {
     height: 250px; 
     background: url(assets/consulting_3.png); 
+}
+
+.staff_photo_2, .staff_photo_3, .consult_photo_1, .consult_photo_2, .consult_photo_3 {
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -596,28 +552,11 @@ button {
     box-shadow: 2px 2px 15px 2px #343434;
 }
 
-.staff_text_cont {
+.staff_text_cont, .staff_text_cont3, .staff_text_cont4 {
     background-color: rgb(47, 47, 47); 
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     box-shadow: 2px 2px 15px 2px #343434;
-    
-} 
-
-.staff_text_cont3 {
-    background-color: rgb(47, 47, 47); 
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    box-shadow: 2px 2px 15px 2px #343434;
-    
-}
-
-.staff_text_cont4 {
-    background-color: rgb(47, 47, 47); 
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    box-shadow: 2px 2px 15px 2px #343434;
-    
 }
 
 .staff_text_cont2 {
@@ -631,7 +570,6 @@ button {
     font-size: 1.4rem; 
     padding: 5px; 
 }
-
 
 @media screen and (min-width:1024px) {
     .container {
@@ -688,7 +626,6 @@ button {
 }
 
 @media screen and (min-width:1024px) {
-
     .hide_large {
         display: none; 
     }
@@ -728,16 +665,15 @@ button {
     .consult_w33 {
         width: 100%; 
     }
+    
     .slideshow_biz {
         margin-bottom: 2rem; 
     }
 }
 
-
 @media screen and (min-width:1024px) {
     .flex_consult {
         flex-direction: row; 
-     
     }
 
     .consult_w33 {
@@ -763,16 +699,13 @@ button {
 
 .cyber_photo_1 {
     background: url(assets/cyber_1.png); 
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px;   
-    box-shadow: 2px 2px 15px 2px #343434;
 }
 
 .cyber_photo_2 {
     background: url(assets/cyber_2.png); 
+}
+
+.cyber_photo_1, .cyber_photo_2 {
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -934,7 +867,6 @@ footer {
     cursor: pointer; 
     color: rgb(175, 175, 175); 
     transition: color .3s ease-in-out; 
-
 }
 
 .fa-angle-left:hover, .fa-angle-right:hover {
