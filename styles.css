@@ -4,13 +4,21 @@
     margin: 0; 
 }
 
+.br2 {
+    outline: 2px solid red; 
+}
+
+.mb2r {
+    padding-bottom:.5rem; 
+}
+
 :root {
     --standard-blue: #005D96; 
     --standard-green: #00966E; 
 }
 
 body {
-    background-color: rgb(233, 233, 233); 
+    background-color: #f6f6f6; 
     /* background: linear-gradient(to bottom, transparent, rgb(192, 192, 192) 80%); */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
     color: #ffffff; 
@@ -59,11 +67,11 @@ body {
 }
 
 .mt-2rs {
-    margin-top: 2rem; 
+    margin-top: 4rem; 
 }
 
 .mt-1rs {
-    margin-top: 1rem; 
+    margin-top: 2rem; 
 }
 
 .text-black {
@@ -163,6 +171,10 @@ button {
     display:grid; 
 }
 
+.agile-width {
+    width: 100%; 
+}
+
 @media screen and (max-width:1024px){
     .gri-3x {
         grid-template-columns: 1fr; 
@@ -182,9 +194,7 @@ button {
         flex-direction: column; 
     }
 
-    .agile-width {
-        width: 100%; 
-    }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -200,12 +210,13 @@ button {
     }
 
     .agile_width {
-        width: 50%; 
+        width: 100%; 
     }
 
     .grid-specializations {
         grid-template-columns: 60% 1fr;
     }
+    
 }
 
 .gri-1 {
@@ -258,6 +269,7 @@ button {
         padding-left: 1.5rem; 
         padding-right: 1.5rem; 
     }
+
 }
 
 @media screen and (min-width:576px) {
@@ -275,7 +287,7 @@ button {
 .hero {
     position: relative; 
     height: 80vh;
-    background:  url(assets/proNHero.png);
+    background: url(assets/proNHero.png);
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -327,8 +339,8 @@ button {
     height: 100%;
     /* background: rgba(0, 0, 0, 0.7); Background color with opacity */
     background: 
-    linear-gradient(to top right, rgba(96, 96, 96, 0.0) 0%, rgba(0, 0, 0, .35) 60%, rgba(0, 0, 0, .5) 80%),
-    linear-gradient(to top left, rgba(96, 96, 96, 0.0) 0%, rgba(0, 0, 0, .35) 60%, rgba(0, 0, 0, .5) 80%);
+    linear-gradient(to top right, rgba(96, 96, 96, 0.0) 0%, rgba(0, 0, 0, .3) 70%, rgba(0, 0, 0, .4) 80%),
+    linear-gradient(to top left, rgba(96, 96, 96, 0.0) 0%, rgba(0, 0, 0, .3) 70%, rgba(0, 0, 0, .4) 80%);
     backdrop-filter: blur(0px);
 }
 
@@ -346,6 +358,7 @@ button {
     font-weight: bold; 
     color: black; 
     font-size: 1.4rem; 
+    padding-bottom:.1rem;
 }
 
 .agile_header2 {
@@ -354,48 +367,81 @@ button {
     font-size: 1.4rem; 
 }
 
+.cyber_header {
+    padding-bottom:.5rem;
+}
+
 .agile_height {
     height: 350px; 
+}
+
+.agile_head_under {
+    border-bottom: 2px solid rgb(0, 93, 150, .6); 
+}
+
+.agile_head_under2 {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6); 
+}
+
+.staffing_h2 {
+    padding-top:.5rem; 
 }
 
 .agile_photo_1 {
     height: 225px; 
     background: url(assets/agile_1.png); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px; 
+    border-radius: 5px; 
 }
 
 .agile_photo_2 {
     height: 225px; 
     background: url(assets/agile_2.png); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px; 
+    border-radius: 5px; 
 }
 
 .agile_photo_3 {
     height: 225px; 
     background: url(assets/agile_3.png); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px; 
+    border-radius: 5px; 
 }
 
 .agile_photo_4 {
     height: 225px; 
     background: url(assets/agile_4.png); 
-}
-
-.agile_photo_1, .agile_photo_2, .agile_photo_3, .agile_photo_4 {
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    margin-bottom: 10px; 
+    background-repeat: no-repeat;
+    margin: 10px; 
     border-radius: 5px; 
-    box-shadow: 1px 1px 15px 1px #343434;
 }
 
 .staffing_h2_bizArea {
     font-weight: normal; 
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
+    padding-top: .25rem; 
 }
 
 #slideshow_pic {
     width: 100%
 }
+
+.edgeM_agile {
+    margin-top: .75rem; 
+}
+
+
 
 @media screen and (max-width:1024px)  {
     .grid-staff {
@@ -416,6 +462,8 @@ button {
     .p-standard-mob-mb {
         margin-bottom: 4rem; 
     }
+
+  
 }
 
 @media (min-width: 576px) and (max-width: 1024px) {
@@ -665,7 +713,7 @@ button {
     .consult_w33 {
         width: 100%; 
     }
-    
+
     .slideshow_biz {
         margin-bottom: 2rem; 
     }
@@ -689,6 +737,7 @@ button {
 .bizArea_header2 {
     font-weight: bold; 
     margin-top: -8px; 
+    padding-bottom: .5rem;
 }
 
 .cyber_tagline {
@@ -772,6 +821,10 @@ footer {
 
 @media screen and (max-width: 768px) {
     .foot_contact {
+        margin-top: 1rem; 
+    }
+
+    .edgeM_agilebox {
         margin-top: 1rem; 
     }
 }

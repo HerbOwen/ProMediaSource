@@ -15,12 +15,12 @@ var textContent = [
 var currentIndex = 0;
 
 function updateBackground() {
-    ssbg.style.transition = "opacity 0.33s ease-in-out"; // Adding transition
-    ssbg.style.opacity = 0; // Start with opacity 0
+    ssbg.style.transition = "opacity 0.33s ease-in-out"; 
+    ssbg.style.opacity = 0; 
     sstxtHead.innerHTML = `${textHead[currentIndex]}`;
     sstxtCont.innerHTML = "";
 
-    // Create and append <p> elements for each entry in textContent array
+    
     textContent[currentIndex].forEach(content => {
         const paragraph = document.createElement("div");
         paragraph.className = "lookInJs"; 
@@ -29,7 +29,7 @@ function updateBackground() {
         sstxtCont.appendChild(paragraph);
     });
 
-    // Update dots
+  
     const dots = Array.from(dotContainer.children);
     dots.forEach((dot, index) => {
         if (index === currentIndex) {
@@ -46,18 +46,18 @@ function updateBackground() {
         ssbg.style.backgroundRepeat = "no-repeat";
         ssbg.style.borderRadius = "5px";
         ssbg.style.boxShadow = "2px 2px 15px 2px #343434";
-        ssbg.style.opacity = 1; // Set opacity to 1 after updating background
-    }, 140); // Wait for 0.33 seconds (330 milliseconds)
+        ssbg.style.opacity = 1; 
+    }, 140); 
 }
 
-// Function to generate dots
+
 function generateDots() {
     for (let i = 0; i < images.length; i++) {
         const dot = document.createElement("p");
         dot.className = "dot";
         dot.addEventListener("click", () => {
             currentIndex = i;
-            stopSlideshow(); // Stop the slideshow when a dot is clicked
+            stopSlideshow(); 
             updateBackground();
         });
         dotContainer.appendChild(dot);
@@ -66,7 +66,7 @@ function generateDots() {
 
 document.getElementById("nextBtn").addEventListener("click", function () {
     currentIndex++;
-    stopSlideshow(); // Stop the slideshow when next button is clicked
+    stopSlideshow(); 
     if (currentIndex >= images.length) {
         currentIndex = 0;
     }
@@ -75,16 +75,16 @@ document.getElementById("nextBtn").addEventListener("click", function () {
 
 document.getElementById("prevBtn").addEventListener("click", function () {
     currentIndex--;
-    stopSlideshow(); // Stop the slideshow when prev button is clicked
+    stopSlideshow(); 
     if (currentIndex < 0) {
         currentIndex = images.length - 1;
     }
     updateBackground();
 });
 
-var slideshowInterval; // Declare a variable to store the interval ID
+var slideshowInterval; 
 
-// Function to start the slideshow
+
 function startSlideshow() {
     slideshowInterval = setInterval(() => {
         currentIndex++;
@@ -92,15 +92,15 @@ function startSlideshow() {
             currentIndex = 0;
         }
         updateBackground();
-    }, 4300); // Change 5000 to the desired interval in milliseconds (e.g., 5000 for 5 seconds)
+    }, 4300); 
 }
 
-// Function to stop the slideshow
+
 function stopSlideshow() {
     clearInterval(slideshowInterval);
 }
 
-// Call startSlideshow function to begin the slideshow
+
 startSlideshow();
 
 generateDots();
