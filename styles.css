@@ -5,7 +5,7 @@
 }
 
 .br2 {
-    outline: 2px solid red; 
+    outline: 5px solid red; 
 }
 
 .mb2r {
@@ -59,7 +59,7 @@ body {
 }
 
 .p-1re {
-    padding: 2rem; 
+    padding: 1rem 1rem 1rem .75rem; 
 }
 
 .mt-pt1 {
@@ -114,12 +114,12 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem; 
+    font-size: 1.85rem; 
     line-height: 1; 
 }
 
 h2 {
-    font-size: 1.75rem; 
+    font-size: 1.4rem; 
     font-weight: bold;  
     margin-top: .25rem; 
 }
@@ -142,15 +142,17 @@ h2 {
 
 button {
     border: none; 
-    padding: 1rem 2rem; 
+    padding: 1rem 1rem; 
     border-radius: 10px; 
-    font-size: 1.1rem;
-    background-color: var(--standard-blue); 
+    font-size: 1.25rem;
+    background: linear-gradient(to top, #005D96 95%, #00395d); 
     color: rgb(230, 230, 230); 
     font-weight: bold; 
-    margin-top:1.5rem;
+    margin-top:1rem;
     cursor: pointer; 
     text-align: center; 
+    box-shadow: 2px 2px 15px 2px #343434;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .hover_trans {
@@ -160,7 +162,7 @@ button {
 }
 
 .hover_trans:hover {
-    opacity: .6; 
+    opacity: .9; 
 }
 
 .p-nav {
@@ -286,7 +288,8 @@ button {
 
 .hero {
     position: relative; 
-    height: 80vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh; 
     background: url(assets/proNHero.png);
     background-position-x: center;
     background-position-y: center;
@@ -296,39 +299,117 @@ button {
 }
 
 .hero_text_ml {
-    margin-left: -260px;
     z-index:1000;
-    
+    margin-left: -250px;
+    width: 60%;
+    padding: 1rem;
 }
 
 .hero_square {
+    position: relative;
     border: 20px solid #00966E; 
-    height:450px; 
-    width: 450px;; 
+    height: 400px; 
+    width: 40%;
+    padding: 10rem 0; 
     border-radius:5px;
-    backdrop-filter: blur(2px);
-    opacity:.5;
+    opacity:.6;
+    z-index:100;
+    box-shadow: 1px 1px 15px 1px #343434;
 }
 
 .hero_tagline {
-    margin-top:10px;
+    margin-top:1rem;
     font-size:1.35rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
 }
 
-.hero_hone {
-  background-color: #00966E; 
+#hero_hone {
+  position: relative; 
+  left:-100vw; 
+  opacity: 0; 
+  background: linear-gradient(to top right, #00966E, #008763); 
+  box-shadow: 1px 1px 15px 1px #343434;
   border-radius:5px; 
-  padding:.5rem;
-  padding-right: 5rem; 
+  padding:.65rem;
   width: 100%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#hero_hone2 {
+  position: relative; 
+  left:-100vw; 
+  opacity: 0; 
+  background: linear-gradient(to top right, #008763, #00966E); 
+  box-shadow: 1px 1px 15px 1px #343434;
+  border-radius:5px; 
+  padding:.65rem;
+  width: 100%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        left: -50vw;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0; 
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        left: -50vw;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+#hero-p2,
+#hero_p22 {
+    opacity: 0; /* Start with opacity 0 */
+    transition: opacity 0.5s ease-in-out 1.25s; /* Transition opacity over 0.5s, starting 2s after page load */
+}
+
+#hero-p2.show,
+#hero_p22.show {
+    opacity: 1; /* Transition to opacity 1 */
+}
+
+/* Trigger animation on element with this class */
+.animated-hero {
+    animation: slideInFromLeft 2.5s ease-in-out forwards; /* 'forwards' keeps the state at 100% keyframe */
+}
+.animated-hero2 {
+    animation: slideInFromRight 2.5s .2s ease-in-out forwards; /* 'forwards' keeps the state at 100% keyframe */
 }
 
 .hero_honemt {
-    margin-top:1rem; 
+    margin-top:1rem;
 }
 
 .hero_p {
     font-size:1.5rem;
+    
+    
+}
+
+.hero_p2 {
+    max-width: 550px;
+    margin-top:1rem;
 }
 
 .background-overlay {
@@ -510,6 +591,10 @@ button {
         margin-left: 20%; 
         margin-right: 20%; 
     }
+
+    .between-just {
+        justify-content: center; 
+    }
 }
 
 @media screen and (min-width:1024px)  {
@@ -639,13 +724,8 @@ button {
         margin-right: 1rem; 
     }
 
-    .hero_text_ml {
-        margin-left: -200px; 
-    }
-
-    .hero_square {
-        width: 285px;
-    }
+ 
+    
 
     .hide_small {
         display: none; 
@@ -737,7 +817,7 @@ button {
 .bizArea_header2 {
     font-weight: bold; 
     margin-top: -8px; 
-    padding-bottom: .5rem;
+    padding-bottom: .2rem;
 }
 
 .cyber_tagline {
@@ -856,16 +936,21 @@ footer {
 }
 
 .blue-bg {
-    color: #ffffff; 
+   
     /* background-image: linear-gradient(to top, #005D96, #013657); */
     background: linear-gradient(to top right, rgb(0, 0, 0) 2%, #005D96 98%);
     box-shadow: 4px 4px 15px 2px #343434;
+    padding-top:.75rem;
+    padding-bottom: 1.5rem; 
 }
 
 .green-bg {
     color: #ffffff; 
     background-image: linear-gradient(to top left, #00966E, #024232);
     box-shadow: 4px 4px 15px 2px #343434;
+    padding-top:.75rem;
+    padding-bottom: 1.5rem; 
+   
 }
 
 .logo_pic {

@@ -105,3 +105,25 @@ startSlideshow();
 
 generateDots();
 updateBackground();
+
+document.addEventListener("DOMContentLoaded", function() {
+    var element = document.getElementById('hero_hone');
+    var element2 = document.getElementById('hero_hone2');
+    element.classList.add('animated-hero');
+    element2.classList.add('animated-hero2');
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var element1 = document.getElementById('hero-p2');
+    var element2 = document.getElementById('hero_p22');
+    
+    // Add class to trigger transition after 2 seconds
+    setTimeout(function() {
+        element1.classList.add('show');
+        
+    }, 1700); // 2000 milliseconds = 2 seconds
+    setTimeout(function() {
+        element2.classList.add('show');
+        
+    }, 2600); // 2000 milliseconds = 2 seconds
+});
