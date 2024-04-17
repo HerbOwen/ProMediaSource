@@ -127,3 +127,8 @@ document.addEventListener("DOMContentLoaded", function() {
         
     }, 2600); // 2000 milliseconds = 2 seconds
 });
+
+function sendEmail() {
+    // Replace 'youremail@example.com' with the email address you want to send the email to
+    window.location.href = "mailto:youremail@example.com";
+  }

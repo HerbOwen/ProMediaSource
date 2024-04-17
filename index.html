@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <script src="index.js" defer></script>
 </head>
-    <body>      
+    <body>    
+        <div style="background-color:black; color: white">THIS IS NOT AN OFFICIAL SITE..TESTING</div>  
         <div class="flex flex-col items-center">
             <div class="w-full bg_white">
                 <div class="max-w-1278 p-nav">
@@ -21,7 +22,7 @@
                                 <i class="fa-regular fa-envelope fa-lg text-black"></i>
                             </div>
                             <div>
-                                <p class="p-1 text-black f-bold">sales@ProNetworkMedia.com</p>
+                                <a href="mailto:sales@ProNetworkMedia.com"><p class="p-1 text-black f-bold">sales@ProNetworkMedia.com</p></a>
                             </div>
                         </div>
                     </div>
@@ -38,17 +39,17 @@
                         </div class="w-full">    
                             <div class="hero_text_ml">
                                 <div>
-                                    <h1 class="hero_hone" id="hero_hone">EMBRACE AGILITY</h1>
+                                    <h1 class="hero_hone" id="hero_hone">EMBRACE AGILITY &nbsp; &nbsp; &nbsp; </h1>
                                     <h1 class="hero_hone hero_honemt" id="hero_hone2">EMBRACE INNOVATION</h1>    
                                 </div>
                                 <div id="hero-p2">
-                                    <h2 class="hero_tagline hide_small">AGILE CONSULTING | IT CONSULTING | BUSINESS SERVICES</h2>
+                                    <h2 class="hero_tagline hide_small">AGILE CONSULTING  |  IT CONSULTING  |  BUSINESS SERVICES</h2>
                                     
                                 </div>    
                                 <div class="hero_p2" id="hero_p22">
                                     <!-- <p class="hero__p">ProNetworkMedia Specializes in Agile Consulting, IT Consulting and Business Services
                                     With over 20 years of experience providing IT Services to Wall Street, Media, Legal, Insurance, Hedge Funds, and Credit Card businesses.</p> -->
-                                    <button type="button" class="hover_trans">START TODAY</button>
+                                    <button type="button" class="hover_trans" onclick="sendEmail()">START TODAY</button>
                                 </div>
                             </div>
                         </div>
@@ -57,11 +58,11 @@
             </section>
             <section class="w-full">
                 <div class="max-w-1278 p-standard section_margin">
-                    <div class="flex items-center between-just" style="color:black; width:100%; margin-top:2rem;">
-                        <p class="cyber_header items-center " style="padding-left:1rem; padding-bottom: 1rem;">Agile Edge: Empowering Teams for Success</p>
+                    <div class="flex items-center between-just" >
+                        <p class="cyber_header agile_head items-center cyber_header_mb">Agile Edge: Empowering Teams for Success</p>
                     </div>   
                     <div class="grid gri-3x">
-                        <div class="grid gri-1 text-black p-standard">
+                        <div class="grid gri-1 agile_edgeP text-black p-standard">
                             <div class="flex flex-col justify-center p-standard" >
                                 <div>
                                     <p class="agile_header2">Agile Benefits</p> 
@@ -149,7 +150,7 @@
             <section class="w-full green-bg" >
                 <div class="max-w-1278 p-standard section_margin">
                     <div class="staff_photo_div edgePadding">
-                        <p class="staff_header agile_head_under2 mb2r">Staffing and Resource Augmentation</h1>
+                        <p class="staff_header">Staffing and Resource Augmentation</h1>
                         <p class="staffing_h2 mb2r">You Need to Staff Up Quickly and Meet Critical Deliverables</p>
                         <p class="hero__p__staff mx-5002 fw-bold">
                             Our Database of skilled and experienced professionals are ready to help your organization meet its objectives. 
@@ -232,7 +233,7 @@
             <section class="w-full blue-bg">
                 <div class="max-w-1278 p-standard section_margin">
                     <div class="grid-specializations p-standard b-rad">
-                        <div class="flex justify-center p-standard2 ">
+                        <div class="flex justify-center p-standard2" >
                             <div>
                                 <p class="cyber_header " >
                                     ProNetworkMedia Specilizations 
@@ -263,9 +264,10 @@
             </section>
 
             <section class="w-full">
+               
                 <div class="section_margin p-standard">
-
-                <div class="max-w-1278 flex flex-col text-black p-standard mt-2rs">
+               
+                <div class="max-w-1278 flex flex-col text-black p-standard">
                     
                     <div class="flex_consult justify-center container">    
                         <div class="consult_w33 flex justify-center items-center">
@@ -302,7 +304,7 @@
         </div>
 
         <footer class="w-full">
-            <div class="max-w-1278 p-standard2 footer__gri" style="padding-top: 2rem; padding-bottom:2rem;" >
+            <div class="max-w-1278 p-standard2 footerPad footer__gri">
                 <div class="flex flex-col">
                     <h6 class="font-22">About</h6>
                     <p class="font-15 mb_foot_text">ProNetworkMedia LLC was established in 2008 and specializes in Agile Consulting, IT Consulting and Business Services.</p>
@@ -318,7 +320,7 @@
                     </div>
                     <div class="flex items-center">
                         <i class="fa-regular fa-envelope text_red pr-foot-icon fa-xl"></i>
-                        <p class="font-15">sales@pronetworkmedia.com</p>
+                        <a href="mailto:sales@pronetworkmedia.com"><p class="font-15">sales@pronetworkmedia.com</p></a>
                     </div>    
                 </div>
                 <div class="flex mt-foot-logo">
