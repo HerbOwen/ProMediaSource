@@ -568,7 +568,6 @@ button {
     padding: 6rem 6rem;
 }
 
-
 @media screen and (max-width:1024px)  {
     .grid-staff {
         grid-template-columns: 1fr;
@@ -589,7 +588,9 @@ button {
         margin-bottom: 4rem; 
     }
 
-  
+    #slideshow_pic {
+        max-height: 225px; 
+    }
 }
 
 @media (min-width: 576px) and (max-width: 1024px) {
