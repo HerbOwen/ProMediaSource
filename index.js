@@ -1,3 +1,6 @@
+console.log("Thanks for checking out Pronetworkmedia.com")
+console.log("Written by Herb Owenby @ herbswebdev@gmail.com")
+
 let ssbg = document.getElementById("slideshow_pic");
 let sstxt = document.getElementById("slide_textarea");
 let sstxtHead = document.getElementById("slide_textHead");
@@ -20,7 +23,6 @@ function updateBackground() {
     sstxtHead.innerHTML = `${textHead[currentIndex]}`;
     sstxtCont.innerHTML = "";
 
-    
     textContent[currentIndex].forEach(content => {
         const paragraph = document.createElement("div");
         paragraph.className = "lookInJs"; 
@@ -29,7 +31,6 @@ function updateBackground() {
         sstxtCont.appendChild(paragraph);
     });
 
-  
     const dots = Array.from(dotContainer.children);
     dots.forEach((dot, index) => {
         if (index === currentIndex) {
@@ -49,7 +50,6 @@ function updateBackground() {
         ssbg.style.opacity = 1; 
     }, 140); 
 }
-
 
 function generateDots() {
     for (let i = 0; i < images.length; i++) {
@@ -84,7 +84,6 @@ document.getElementById("prevBtn").addEventListener("click", function () {
 
 var slideshowInterval; 
 
-
 function startSlideshow() {
     slideshowInterval = setInterval(() => {
         currentIndex++;
@@ -95,14 +94,11 @@ function startSlideshow() {
     }, 4300); 
 }
 
-
 function stopSlideshow() {
     clearInterval(slideshowInterval);
 }
 
-
 startSlideshow();
-
 generateDots();
 updateBackground();
 
@@ -117,18 +113,15 @@ document.addEventListener("DOMContentLoaded", function() {
     var element1 = document.getElementById('hero-p2');
     var element2 = document.getElementById('hero_p22');
     
-    // Add class to trigger transition after 2 seconds
     setTimeout(function() {
         element1.classList.add('show');
-        
-    }, 1700); // 2000 milliseconds = 2 seconds
+    }, 1400); 
+
     setTimeout(function() {
         element2.classList.add('show');
-        
-    }, 2600); // 2000 milliseconds = 2 seconds
+    }, 2300); 
 });
 
 function sendEmail() {
-    // Replace 'youremail@example.com' with the email address you want to send the email to
     window.location.href = "mailto:youremail@example.com";
-  }
+}
